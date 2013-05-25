@@ -1,6 +1,6 @@
 /*
  * lists - Simple array types in C
- * Copyright (C) 2010 Jonathan Ruttan (JonRuttan@gmail.com)
+ * Copyright (C) 2013 Jonathan Ruttan (JonRuttan@gmail.com)
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,7 +16,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- * $Id: lists.h,v 0.6 2012-05-05 10:39:59 jon Exp $
+ * $Id: lists.h,v 0.7 2032-05-25 00:03:59 jon Exp $
  */
 
 #ifndef __LISTS_H__
