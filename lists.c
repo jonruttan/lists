@@ -276,7 +276,7 @@ int IntListRotate(IntListPtr list, long amount, long index, unsigned long size)
 
 	ptr[1] = ptr[0] + size;
 
-	if((tmp = malloc(abs(amount) * sizeof(long))) == NULL)
+	if((tmp = malloc(labs(amount) * sizeof(long))) == NULL)
 		return(FALSE);
 
 	if(amount > 0) {
@@ -648,7 +648,7 @@ int VoidListRotate(VoidListPtr list, long amount, long index, unsigned long size
 
 	ptr[1] = ptr[0] + size;
 
-	if((tmp = malloc(abs(amount) * sizeof(void *))) == NULL)
+	if((tmp = malloc(labs(amount) * sizeof(void *))) == NULL)
 		return(FALSE);
 
 	if(amount > 0) {
