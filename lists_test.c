@@ -10,7 +10,7 @@
 #define TMPLEN			65536
 #define WORDLIST		"/usr/share/dict/words"
 
-int int_getset(IntListPtr list, long index, long value, long assert)
+void int_getset(IntListPtr list, long index, long value, long assert)
 {
 	long i;
 
@@ -27,7 +27,7 @@ int int_getset(IntListPtr list, long index, long value, long assert)
 		printf("Item %ld: %ld (should now be %ld)\n", index, i, value);
 }
 
-int void_getset(VoidListPtr list, long index, char *value, char *assert)
+void void_getset(VoidListPtr list, long index, char *value, char *assert)
 {
 	char s[TMPLEN];
 
@@ -45,7 +45,7 @@ int void_getset(VoidListPtr list, long index, char *value, char *assert)
 
 }
 
-int str_getset(StrListPtr list, long index, char *value, char *assert)
+void str_getset(StrListPtr list, long index, char *value, char *assert)
 {
 	char s[TMPLEN];
 
